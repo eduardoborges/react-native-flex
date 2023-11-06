@@ -2,8 +2,7 @@
   <h1>🥸 react-native-flex</h1>
   <h4>A simple flex grid component to build layouts with elegance</h4>
 
-  ![npm](https://img.shields.io/npm/v/react-native-flex<) ![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/react-native-flex<?color=green-light) ![npm](https://img.shields.io/npm/dw/react-native-flex<)
-
+  ![npm](https://img.shields.io/npm/v/react-native-flex) ![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/react-native-flex?color=green-light) ![npm](https://img.shields.io/npm/dw/react-native-flex)
 </div>
 
 

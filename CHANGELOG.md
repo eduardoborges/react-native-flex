@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/eduardoborges/react-native-flex/compare/1.0.0...1.0.1) (2023-11-06)
+
+
+### Bug Fixes
+
+* correct brands ([75114f4](https://github.com/eduardoborges/react-native-flex/commit/75114f40733a42734678907410cd7df998665a2f))
+
 # 1.0.0 (2023-11-06)
 
 

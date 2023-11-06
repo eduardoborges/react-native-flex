@@ -1,4 +1,4 @@
-name: Release
+name: CR
 on:
   push:
     branches:

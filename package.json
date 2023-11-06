@@ -1,0 +1,63 @@
+{
+  "name": "react-native-flex",
+  "version": "0.0.0",
+  "description": "A react Hook for build elegant input masks. Compatible with React Hook Form",
+  "author": "Eduardo Borges<euduardoborges@gmail.com>",
+  "type": "module",
+  "repository": "https://github.com/eduardoborges/use-mask-input",
+  "source": "./src/index.tsx",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "./scripts.sh build",
+    "dev": "./scripts.sh dev",
+    "lint": "./scripts.sh lint",
+    "prepare": "./scripts.sh prepare"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "peerDependencies": {
+    "react": ">=16.4 || 17 || 18 || 20",
+    "react-native": ">=0.64"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "11.0.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.2.1",
+    "@semantic-release/npm": "11.0.0",
+    "@semantic-release/release-notes-generator": "12.0.0",
+    "@types/inputmask": "5.0.4",
+    "@types/node": "16",
+    "@types/react": ">=16.4 || 17 || 18",
+    "@typescript-eslint/eslint-plugin": "6.8.0",
+    "@typescript-eslint/parser": "6.8.0",
+    "esbuild": "0.19.5",
+    "eslint": "8.51.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.1.0",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "patch-package": "^8.0.0",
+    "react-hook-form": "7.47.0",
+    "read-pkg": "8.1.0",
+    "rollup": "4.1.4",
+    "rollup-plugin-dts": "6.1.0",
+    "rollup-plugin-esbuild": "6.1.0",
+    "semantic-release": "22.0.5",
+    "simple-git-hooks": "2.9.0",
+    "typescript": "5.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint && npm run test && npm run build"
+  }
+}

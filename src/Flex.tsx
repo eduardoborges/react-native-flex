@@ -1,0 +1,194 @@
+import React, { useMemo } from 'react';
+import {
+  DimensionValue, StyleSheet, View, ViewProps,
+} from 'react-native';
+
+export type FlexProps = React.PropsWithChildren<{
+  debug?: boolean;
+  debugBg?: boolean;
+  debugColor?: string;
+  //
+  size?: number;
+  full?: boolean;
+  gap?: number;
+  gapless?: boolean;
+  centered?: boolean;
+  end?: boolean;
+  start?: boolean;
+  vCentered?: boolean;
+  multiline?: boolean;
+  vEnd?: boolean;
+  vStart?: boolean;
+  vertical?: boolean;
+  horizontal?: boolean;
+  width?: DimensionValue;
+  offset?: number;
+  narrow?: boolean;
+  bg?: string;
+  /**
+   * Description: margin
+   * @example m={10} // margin: 10
+   */
+  p?: number | Array<number>;
+  pt?: number;
+  pr?: number;
+  pb?: number;
+  pl?: number;
+  m?: number | Array<number>;
+  mt?: number;
+  mr?: number;
+  mb?: number;
+  ml?: number;
+  style?: ViewProps['style'];
+}>;
+
+/**
+ *
+ * @param props {FlexProps}
+ * @returns
+ */
+export function Flex(props: FlexProps) {
+  const { children } = props;
+  const s = useMemo(() => getStyles(props), [props]);
+
+  return (
+    <View style={s.flex}>
+      {children}
+    </View>
+  );
+}
+
+const getStyles = (p: FlexProps) => StyleSheet.create({
+  flex: {
+    // defaults
+    backgroundColor: p.bg,
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'nowrap',
+
+    // for debugging
+    ...(p.debug && {
+      borderWidth: 1,
+      borderColor: p.debugColor || 'blue',
+    }),
+    ...(p.debugBg && {
+      backgroundColor: p.debugColor || 'blue',
+    }),
+    // overrides
+    ...(p.full && {
+      width: '100%',
+    }),
+    ...(p.size && {
+      flex: p.size,
+    }),
+    ...(p.width && {
+      width: p.width,
+      flex: 0,
+    }),
+    ...(p.offset && {
+      marginLeft: p.offset,
+    }),
+    ...(p.narrow && {
+      flex: 0,
+    }),
+    // margins
+    ...(p.m && typeof p.m === 'number' && {
+      margin: p.m,
+    }),
+    ...(p.m && Array.isArray(p.m) && p.m.length === 2 && {
+      marginVertical: p.m[0],
+      marginHorizontal: p.m[1],
+    }),
+    ...(p.m && Array.isArray(p.m) && p.m.length === 3 && {
+      marginTop: p.m[0],
+      marginHorizontal: p.m[1],
+      marginBottom: p.m[2],
+    }),
+    ...(p.m && Array.isArray(p.m) && p.m.length === 4 && {
+      marginTop: p.m[0],
+      marginRight: p.m[1],
+      marginBottom: p.m[2],
+      marginLeft: p.m[3],
+    }),
+    ...(p.mt && {
+      marginTop: p.mt,
+    }),
+    ...(p.mr && {
+      marginRight: p.mr,
+    }),
+    ...(p.mb && {
+      marginBottom: p.mb,
+    }),
+    ...(p.ml && {
+      marginLeft: p.ml,
+    }),
+
+    // paddings
+    ...(p.p && typeof p.p === 'number' && {
+      padding: p.p,
+    }),
+    ...(p.p && Array.isArray(p.p) && p.p.length === 2 && {
+      paddingVertical: p.p[0],
+      paddingHorizontal: p.p[1],
+    }),
+    ...(p.p && Array.isArray(p.p) && p.p.length === 3 && {
+      paddingTop: p.p[0],
+      paddingHorizontal: p.p[1],
+      paddingBottom: p.p[2],
+    }),
+    ...(p.p && Array.isArray(p.p) && p.p.length === 4 && {
+      paddingTop: p.p[0],
+      paddingRight: p.p[1],
+      paddingBottom: p.p[2],
+      paddingLeft: p.p[3],
+    }),
+    ...(p.pt && {
+      paddingTop: p.pt,
+    }),
+    ...(p.pr && {
+      paddingRight: p.pr,
+    }),
+    ...(p.pb && {
+      paddingBottom: p.pb,
+    }),
+    ...(p.pl && {
+      paddingLeft: p.pl,
+    }),
+
+    // flexbox
+    ...(p.vertical && {
+      flexDirection: 'column',
+    }),
+    ...(p.horizontal && {
+      flexDirection: 'row',
+    }),
+    ...(p.gap && {
+      gap: p.gap,
+    }),
+    ...(p.gapless && {
+      gap: 0,
+    }),
+    ...(p.centered && {
+      justifyContent: 'center',
+    }),
+    ...(p.end && {
+      justifyContent: 'flex-end',
+    }),
+    ...(p.start && {
+      justifyContent: 'flex-start',
+    }),
+    ...(p.vCentered && {
+      alignItems: 'center',
+    }),
+    ...(p.vEnd && {
+      alignItems: 'flex-end',
+    }),
+    ...(p.vStart && {
+      alignItems: 'flex-start',
+    }),
+    ...(p.multiline && {
+      flexWrap: 'wrap',
+    }),
+    ...p.style as object,
+  },
+});

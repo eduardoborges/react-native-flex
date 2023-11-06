@@ -4,7 +4,7 @@
   "description": "A react Hook for build elegant input masks. Compatible with React Hook Form",
   "author": "Eduardo Borges<euduardoborges@gmail.com>",
   "type": "module",
-  "repository": "https://github.com/eduardoborges/use-mask-input",
+  "repository": "https://github.com/eduardoborges/react-native-flex.git",
   "source": "./src/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

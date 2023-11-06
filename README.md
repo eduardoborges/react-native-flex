@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>🥸 react-native-flex</h1>
-  <h4>A simple flex grid component to build layouts with elegance</h4>
+  <h1>📏 react-native-flex</h1>
+  <h4>A simple react-native flex grid component to build layouts with elegance</h4>
 
   ![npm](https://img.shields.io/npm/v/react-native-flex) ![npm package minimized gzipped size (select exports)](https://img.shields.io/bundlejs/size/react-native-flex?color=green-light) ![npm](https://img.shields.io/npm/dw/react-native-flex)
 </div>
@@ -22,13 +22,20 @@ npm install react-native-flex
 
 ```jsx
 import React from 'react'
-import { withMask } from 'use-mask-input';
+import { Flex } from 'react-native-flex';
 
 const App = () => {
   return (
-    <input type="text" ref={withMask('9999-9999')} />
+    <Flex vCentered centered vertical debug>
+      <Flex vEnd centered full>
+        // ...
+      </Flex>
+      <Flex centered vCentered>
+        // ...
+      </Flex>
+    </Flex>
   )
 }
 ```
 
-# Let's grid it! 💪
+## Let's grid it! 💪

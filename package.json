@@ -2,7 +2,7 @@
   "name": "react-native-flex",
   "version": "1.0.2",
   "private": false,
-  "description": "A react-native component for build elegant flex grids like a pro.",
+  "description": "A simple react-native flex grid component to build layouts with elegance",
   "author": "Eduardo Borges<euduardoborges@gmail.com>",
   "type": "module",
   "repository": {

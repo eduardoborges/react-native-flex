@@ -42,11 +42,6 @@ export type FlexProps = React.PropsWithChildren<{
   style?: ViewProps['style'];
 }>;
 
-/**
- *
- * @param props {FlexProps}
- * @returns
- */
 export function Flex(props: FlexProps) {
   const { children } = props;
   const s = useMemo(() => getStyles(props), [props]);

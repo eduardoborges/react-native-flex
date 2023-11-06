@@ -18,9 +18,13 @@ function build() {
 };
 
 function prepare() {
+  if [[ $CI == true ]]; then
+    echo "👋 CI detected, skipping git hooks installation...";
+    build;
+  else
   echo "👋 Installing git hooks...";
-  npx simple-git-hooks >> /dev/null;
-  build;
+    npx simple-git-hooks >> /dev/null;
+  fi
 };
 
 function lint() {
@@ -31,11 +35,6 @@ function lint() {
 function clean() {
   echo "🧹 Cleaning up...";
   rm -rf dist;
-};
-
-function postinstall() {
-  echo "👋 Running patches...";
-  npx patch-package;
 };
 
 function hello() {

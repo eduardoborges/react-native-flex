@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/eduardoborges/react-native-flex/compare/1.0.1...1.0.2) (2023-11-06)
+
+
+### Bug Fixes
+
+* Add write permissions for id-token in CR workflow ([5bbf6f8](https://github.com/eduardoborges/react-native-flex/commit/5bbf6f82dbfd05d0e2b4bc1e611c87c50c779b4e))
+
 ## [1.0.1](https://github.com/eduardoborges/react-native-flex/compare/1.0.0...1.0.1) (2023-11-06)
 
 

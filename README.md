@@ -7,19 +7,6 @@
 </div>
 
 
-## Table of Contents
-
-- [Installation](#install)
-- [Usage](#quickstart)
-- [Masking Types](#masking-types)
-  - [Static Masking Type](#static-masking-type)
-  - [Optional Masking Type](#optional-masking-type)
-  - [Dynamic Masking Type](#dynamic-masking-type)
-  - [Alias Masking Type](#alias-masking-type)
-  - [Alternator Masking Type](#alias-masking-type)
-  - [Preprocessing Masking Type](#preprocessing-masking-type)
-
-
 ## Features
 - ✨ Intuitive Grid System: Create responsive and flexible grids for your mobile app layouts effortlessly.
 - 📐 Customizable Grid Configuration: Tailor the grid to your project's unique needs with a range of options.

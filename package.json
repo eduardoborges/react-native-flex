@@ -1,10 +1,14 @@
 {
   "name": "react-native-flex",
   "version": "1.0.0",
-  "description": "A react Hook for build elegant input masks. Compatible with React Hook Form",
+  "private": false,
+  "description": "A react-native component for build elegant flex grids like a pro.",
   "author": "Eduardo Borges<euduardoborges@gmail.com>",
   "type": "module",
-  "repository": "https://github.com/eduardoborges/react-native-flex.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoborges/react-native-flex.git"
+  },
   "source": "./src/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

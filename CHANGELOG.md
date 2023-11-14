@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/eduardoborges/react-native-flex/compare/1.0.2...1.1.0) (2023-11-14)
+
+
+### Features
+
+* add ScrollView support to Flex component & align ([7a2842e](https://github.com/eduardoborges/react-native-flex/commit/7a2842ebb9a8cec87507a0629b2ba2b16059f0be))
+
 ## [1.0.2](https://github.com/eduardoborges/react-native-flex/compare/1.0.1...1.0.2) (2023-11-06)
 
 

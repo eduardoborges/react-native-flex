@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/eduardoborges/react-native-flex/compare/1.1.0...1.2.0) (2023-11-22)
+
+
+### Features
+
+* centered and vCentered now is relative by vertical prop ([110cc88](https://github.com/eduardoborges/react-native-flex/commit/110cc88280998606656a2199e900755cef04a8c8))
+
 # [1.1.0](https://github.com/eduardoborges/react-native-flex/compare/1.0.2...1.1.0) (2023-11-14)
 
 

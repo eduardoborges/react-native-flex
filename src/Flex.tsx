@@ -11,6 +11,8 @@ export type FlexProps = React.PropsWithChildren<{
   debugColor?: string;
   end?: boolean;
   full?: boolean;
+  fullHeight?: boolean;
+  fullWidth?: boolean;
   gap?: number;
   gapless?: boolean;
   horizontal?: boolean;
@@ -92,7 +94,14 @@ const getStyles = (p: FlexProps) => {
       }),
       // overrides
       ...(p.full && {
+        height: '100%',
         width: '100%',
+      }),
+      ...(p.fullWidth && {
+        width: '100%',
+      }),
+      ...(p.fullHeight && {
+        height: '100%',
       }),
       ...(p.size && {
         flex: p.size,

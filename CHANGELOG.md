@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/eduardoborges/react-native-flex/compare/1.2.0...1.3.0) (2023-12-13)
+
+
+### Features
+
+* add fullHeight and fullWidth props ([5cdd00e](https://github.com/eduardoborges/react-native-flex/commit/5cdd00e5b16ea6fc81e9ff0d85261949dab96097))
+
 # [1.2.0](https://github.com/eduardoborges/react-native-flex/compare/1.1.0...1.2.0) (2023-11-22)
 
 
